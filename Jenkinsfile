@@ -1,9 +1,7 @@
 pipeline {
-
   agent any
   
   stages {
-    stage {
       stage ("build") {
         steps {
             echo "building the test environment"
@@ -21,7 +19,8 @@ pipeline {
           echo "deploying the project"
         }
       }
-    }
+    
   }
 
 }
+
